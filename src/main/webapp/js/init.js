@@ -1,11 +1,10 @@
 ﻿
-var dialogWidth = $(window).width() * 0.9;
-var dialogHeight = $(window).height() * 0.9;;
 
 /**
  * Script that is executed when the page is loaded
  */
 $(document).ready(function() {
+    $('#myTab a:first').tab('show');
 
     $("a[role='menuitem']").click(
         function() {
@@ -18,18 +17,8 @@ $(document).ready(function() {
         "bPaginate": false,
         "bInfo": false,
         "bProcessing": true,
-        "sAjaxSource": '/Users/macecyri/WebstormProjects/art-home/art-home/src/main/webapp/js/arrays.txt'});
-
-    /*****************************Initialisation of Editor dialog box  **********************************/
-    $("#dialog_info").dialog({
-        autoOpen : false,
-        modal : true,
-        resizable : true,
-        draggable : true,
-        autoResize:true ,
-        width : dialogWidth,
-        height : dialogHeight
-    });
+        "sDom": "<'row-fluid'<'span6'T><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+        "sAjaxSource": 'js/arrays.txt'});
 
     /***************************** Binding 'click' event on a table row (open dialog_box) **********************************/
     $('#search_result_table').on("click", "tbody tr", function(event) {
@@ -37,5 +26,4 @@ $(document).ready(function() {
         var id_row = oTable.fnGetData(this)[0];
         openDialogInfoCurrentRow(id_row);
     });
-
 });
