@@ -23,13 +23,14 @@
 
 <div class="tabbable body">
     <ul id="myTab" class=" nav nav-tabs">
-        <li><a href="#artist" data-toggle="tab">Accueil</a></li>
-        <li><a href="#host" data-toggle="tab">Artistes</a></li>
-        <li><a href="#public" data-toggle="tab">Lieux de représentation</a></li>
+        <li><a href="#home" data-toggle="tab">Accueil</a></li>
+        <li><a href="#artist" data-toggle="tab">Artistes</a></li>
+        <li><a href="#host" data-toggle="tab">Lieux de représentation</a></li>
+        <li><a href="#events" data-toggle="tab">Evenements</a></li>
         <li><a href="#faq" data-toggle="tab">FAQ</a></li>
     </ul>
-    <div class="tab-content">
-        <div class="tab-pane fade in active" id="artist">
+    <div class="tab-content" id="main_tabcontent">
+        <div class="tab-pane fade in active" id="home">
             <ul class="nav nav-pills">
                 <li class="dropdown">
                     <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"><span>Je suis un artiste amateur</span>
@@ -43,7 +44,7 @@
                 <li class="active" id="memberType" data-mtype="artist"><button type="button" class="btn btn-primary">Qu'est-ce aue XX label peut m'apporter</button></li>
             </ul>
         </div>
-        <div class="tab-pane fade in " id="host">
+        <div class="tab-pane fade in " id="artist">
 
             PROFILE ... Raw denim you probably haven't heard of them jean shorts
             Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg
@@ -51,8 +52,9 @@
             qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan
             american apparel, butcher voluptate nisi qui.
         </div>
-        <div class="tab-pane fade in " id="public">MESSAGES ... Aliquip placeat salvia cillum iphone.</div>
+        <div class="tab-pane fade in " id="host">MESSAGES ... Aliquip placeat salvia cillum iphone.</div>
         <div class="tab-pane fade in " id="faq">Mon nom est <span id="username"></span> </div>
+        <div class="tab-pane fade in " id="events">Les évenements sont <span id="username"></span> </div>
     </div>
 </div>
 

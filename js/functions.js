@@ -1,13 +1,19 @@
 ﻿/* Get a catalog description and initialize the editor dialog box  */
 function openDialogInfoMember(membertype) {
-    var framePath =    "frames/" + membertype + "_presentation.html"
+    var framePath = "frames/" + membertype + "_presentation.html"
     $.ajax({
         url: framePath,
         success: function (data) {
             $("#modal_info").html(data);
+            updateModalContent();
             $("#modal_info").modal('show');
         },
         dataType: 'html'
     });
+}
 
+function updateModalContent() {
+    $('.close_modal').on("click", function (event) {
+        $("#modal_info").modal('hide');
+    });
 }
