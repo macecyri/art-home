@@ -5,95 +5,45 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="css/art-home.css"/>
-    <link href="plugins/jquery-ui-1.10.3.custom/css/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
-    <link href="plugins/DataTables-1.9.4/media/css/jquery.dataTables_themeroller.css" rel="stylesheet">
 
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <script src="plugins/jquery-1.10.2.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="plugins/DataTables-1.9.4/media/js/jquery.dataTables.min.js"></script>
 
 
     <title>Art-project</title>
 </head>
 <body>
-<div id="fb-root"></div>
-<script src="http://connect.facebook.net/en_US/all.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/fblogin.js"></script>
 
 <section class="body" id="advertize">
-    J
-
-    'aurais voulu être un artisteeees, la plateforme qui met en relation les artistes avec des lieux de représentation
+    XX Label, le label des artistes amateurs
 
 </section>
 
 <div class="tabbable body">
     <ul id="myTab" class=" nav nav-tabs">
-        <li><a href="#artist" data-toggle="tab">Artiste</a></li>
-        <li><a href="#host" data-toggle="tab">Hôte</a></li>
-        <li><a href="#public" data-toggle="tab">Spectateur</a></li>
-        <li><a href="#account" data-toggle="tab">Mon compte</a></li>
+        <li><a href="#artist" data-toggle="tab">Accueil</a></li>
+        <li><a href="#host" data-toggle="tab">Artistes</a></li>
+        <li><a href="#public" data-toggle="tab">Lieux de représentation</a></li>
+        <li><a href="#faq" data-toggle="tab">FAQ</a></li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane fade in active" id="artist">
             <ul class="nav nav-pills">
-                <li class="active"><a href="#">Je recherche</a></li>
-
                 <li class="dropdown">
-                    <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#"><span>N'importe quel lieu</span>
+                    <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"><span>Je suis un artiste amateur</span>
                         <b class="caret"></b></a>
-                    <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Un bar</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Un café</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Un théâtre</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Un epace extérieur</a></li>
-                        <li role="presentation" class="divider"></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">N'importe quel lieu</a></li>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                        <li role="presentation"><a data-mtype="artist" role="menuitem" tabindex="-1" href="#">Je suis un artiste amateur</a></li>
+                        <li role="presentation"><a data-mtype="host" role="menuitem" tabindex="-1" href="#">Je suis un lieu de représentation (café, théâtre,...)</a></li>
+                        <li role="presentation"><a data-mtype="public" role="menuitem" tabindex="-1" href="#">Je suis un spectateur amateur de chanson française</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#"><span>Pour n'importe quel type de projet artistique</span>
-                        <b class="caret"></b></a>
-                    <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop5">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pour un projet amateur</a>
-                        </li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pour un projet
-                            professionel</a></li>
-                        <li role="presentation" class="divider"></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pour n'importe quel type de
-                            projet
-                            artistique</a></li>
-                    </ul>
-                </li>
+                <li class="active" id="memberType" data-mtype="artist"><button type="button" class="btn btn-primary">Qu'est-ce aue XX label peut m'apporter</button></li>
             </ul>
-
-            <table id="search_result_table">
-                <thead>
-                <tr>
-                    <th>
-                        nom1
-                    </th>
-                    <th>
-                        nom2
-                    </th>
-                    <th>
-                        nom3
-                    </th>
-                    <th>
-                        nom4
-                    </th>
-                    <th>
-                        nom5
-                    </th>
-                </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
         </div>
         <div class="tab-pane fade in " id="host">
-            <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
 
             PROFILE ... Raw denim you probably haven't heard of them jean shorts
             Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg
@@ -102,24 +52,14 @@
             american apparel, butcher voluptate nisi qui.
         </div>
         <div class="tab-pane fade in " id="public">MESSAGES ... Aliquip placeat salvia cillum iphone.</div>
-        <div class="tab-pane fade in " id="account">Mon nom est </div>
+        <div class="tab-pane fade in " id="faq">Mon nom est <span id="username"></span> </div>
     </div>
 </div>
 
 
 <div id="modal_info" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3>Modal header</h3>
-    </div>
-    <div class="modal-body">
-        <p>One fine body…</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#" class="btn">Close</a>
-        <a href="#" class="btn btn-primary">Save changes</a>
-    </div>
+
 </div>
 
 <script type="text/javascript" src="js/functions.js"></script>

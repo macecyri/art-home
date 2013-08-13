@@ -15,10 +15,6 @@ body{
     text-align: center;
 }
 
-/*
- * Row highlighting example
- */
-#search_result_table tr:hover, #search_result_table tr:hover td {
-    background-color: #ABB1DB;
-    cursor: pointer;
+.dropdown-menu{
+    z-index: 100000;
 }

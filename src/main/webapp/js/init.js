@@ -9,21 +9,13 @@ $(document).ready(function() {
     $("a[role='menuitem']").click(
         function() {
             var value = $(this).text();
+            var mtype = $(this).data("mtype");
             $(this).parents('.dropdown').find('.dropdown-toggle > span').text(value);
+            $('#memberType').data("mtype",mtype);
         });
-    oTable = $('#search_result_table').dataTable({
-        "bJQueryUI" : true,
-        "bAutoWidth": false,
-        "bPaginate": false,
-        "bInfo": false,
-        "bProcessing": true,
-        "sDom": "<'row-fluid'<'span6'T><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
-        "sAjaxSource": 'js/arrays.txt'});
 
-    /***************************** Binding 'click' event on a table row (open dialog_box) **********************************/
-    $('#search_result_table').on("click", "tbody tr", function(event) {
-
-        var id_row = oTable.fnGetData(this)[0];
-        openDialogInfoCurrentRow(id_row);
+    /***************************** Binding 'click' event on a the information button (open dialog_box) **********************************/
+    $('#memberType').on("click", "button", function(event) {
+        openDialogInfoMember($('#memberType').data("mtype"));
     });
 });
