@@ -1,9 +1,9 @@
 body{
-    background-image: url('/Users/macecyri/Dropbox/Photos/Canada/divers/DSCF0320.jpg');
+    background-image: url('/art-home/images/sea.jpg');
 }
 
 .body{
-    background-color:rgb(215, 223, 24);
+    background-color:#ffffff;
     margin-left: 2em;
     margin-right: 2em;
 }
@@ -18,3 +18,36 @@ body{
 #main_tabcontent {
     overflow: visible;
 }
+
+#criteriaInfo {
+    margin-right: 1em;
+}
+
+#button_member_type{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.dropdown-toggle .caret{
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-top: 8px !important;
+    border-top-color: #000000 !important;
+    border-bottom-color: #000000 !important;
+}
+
+section{
+    margin: 1em;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+.section-header{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.section-body{
+    padding: 15px;
+}
+
