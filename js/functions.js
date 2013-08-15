@@ -1,18 +1,4 @@
-﻿function openDialogInfoMember(membertype) {
-    var framePath = "frames/" + membertype + "_presentation.html"
-    $.ajax({
-        url: framePath,
-        success: function (data) {
-            $("#modal_info").html(data);
-            updateModalContent();
-            $("#modal_info").modal('show');
-        },
-        dataType: 'html'
-    });
-}
-
-
-function openDialogArtistCrieria() {
+﻿function openDialogArtistCrieria() {
     $.ajax({
         url: "frames/artist_criteria.html",
         success: function (data) {

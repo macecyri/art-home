@@ -10,90 +10,59 @@
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/art-home.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap_custom_navbar.css"/>
 
 
     <title>Art-project</title>
 </head>
 <body>
+<header class="navbar ">
+    <div class="navbar-inner body">
+        <a id="brand" href="#">XX Label</a>
+        <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="google.com">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+    </div>
+</header>
+</header>
 
-<section class="body" id="advertize">
-    XX Label, le label des artistes amateurs qui chantent en francais
+<div class="body" id="content">
+    <section>
+            XX Label est un label qui a pour but
+    </section>
 
-</section>
-
-<div class="tabbable body">
-    <ul id="myTab" class=" nav nav-tabs">
-        <li><a href="#home" data-toggle="tab">Accueil</a></li>
-        <li><a href="#artist" data-toggle="tab">Artistes</a></li>
-        <li><a href="#host" data-toggle="tab">Lieux de représentation</a></li>
-        <li><a href="#events" data-toggle="tab">Evenements</a></li>
-        <li><a href="#faq" data-toggle="tab">FAQ</a></li>
-
-
-    </ul>
-    <div class="tab-content" id="main_tabcontent">
-        <div class="tab-pane fade in active" id="home">
-            <section>
-                <div class="section-header">
-                    <h4>Qu'est ce que c'est</h4>
-                </div>
-
-                <div class="section-body">
-
-                    XX Label est un label qui a pour but
-                </div>
-            </section>
-
-            <section>
-                <div class="section-header">
-                    <h4>Comment ca marche</h4>
-                </div>
-
-                <div class="section-body">
-
-                <ul class="nav nav-pills">
-                    <li id="button_member_type">
-                        <div class="btn-group dropdown">
-                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                                <span>Je suis un artiste amateur</span>
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li role="presentation"><a data-mtype="artist" role="menuitem" tabindex="-1" href="#">Je
-                                    suis un artiste amateur</a></li>
-                                <li role="presentation"><a data-mtype="host" role="menuitem" tabindex="-1" href="#">Je
-                                    suis un lieu de représentation (café, théâtre,...)</a></li>
-                                <li role="presentation"><a data-mtype="public" role="menuitem" tabindex="-1" href="#">Je
-                                    suis un spectateur amateur de chanson française</a></li>
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li class="active" id="criteriaInfo" data-mtype="artist">
-                        <button type="button" class="btn btn-primary">Quelles conditions dois-je remplir</button>
-                    </li>
-
-                    <li class="active" id="memberType" data-mtype="artist">
-                        <button type="button" class="btn btn-primary">Qu'est-ce aue XX label peut m'apporter</button>
-                    </li>
+    <section>
+            <div class="tabbable">
+                <ul id="myTab" class=" nav nav-pills">
+                    <li><a href="#artist" data-toggle="pill">Je suis un artiste</a></li>
+                    <li><a href="#host" data-toggle="pill">Je suis un lieux de représentation</a></li>
+                    <li><a href="#public" data-toggle="pill">Je suis un spectateur</a></li>
                 </ul>
-                </div>
-            </section>
-        </div>
-        <div class="tab-pane fade in " id="artist">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="artist">
+                        On aide les artistes qui satisfassent aux conitions suivantesdbkdhbkdh
 
-            PROFILE ... Raw denim you probably haven't heard of them jean shorts
-            Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg
-            carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi,
-            qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan
-            american apparel, butcher voluptate nisi qui.
-        </div>
-        <div class="tab-pane fade in " id="host">MESSAGES ... Aliquip placeat salvia cillum iphone.</div>
-        <div class="tab-pane fade in " id="faq">Mon nom est <span id="username"></span></div>
-        <div class="tab-pane fade in " id="events">Les évenements sont <span id="username"></span></div>
+                        <button id="criteriaInfo" type="button" class="btn btn-primary">Quelles conditions dois-je remplir</button>
+                    </div>
+                    <div class="tab-pane" id="host">MESSAGES ... Aliquip placeat salvia cillum iphone.</div>
+                    <div class="tab-pane" id="public">Mon nom est <span id="username"></span></div>
+                </div>
+            </div>
+    </section>
+    <div id="references-container">
+        <section>
+               <h4>Quelques artistes membres</h4>
+            <button type="button" class="btn btn-primary">Voir tous nos artistes</button>
+        </section>
+        <section>
+            <h4>Quelques lieux partenaires </h4>
+            <button  type="button" class="btn btn-primary">Voir tous nos lieux partenaires</button>
+        </section>
+
     </div>
 </div>
-
 
 <div id="modal_info" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">

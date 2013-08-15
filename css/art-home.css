@@ -8,11 +8,25 @@ body{
     margin-right: 2em;
 }
 
+header{
+    width:100% !important;
+    margin-bottom: 0px !important;
+}
+
 #advertize{
     height: 3em;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+#brand{
+    display: block;
+    float: left;
+    padding: 10px 20px 10px;
+    margin-left: -20px;
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+    margin-right: 2em;
 }
 
 #main_tabcontent {
@@ -23,31 +37,27 @@ body{
     margin-right: 1em;
 }
 
-#button_member_type{
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
-.dropdown-toggle .caret{
-    margin-left: 5px;
-    margin-right: 0px;
-    margin-top: 8px !important;
-    border-top-color: #000000 !important;
-    border-bottom-color: #000000 !important;
-}
 
 section{
     margin: 1em;
-    background-color: #eee;
+    background-color: #eeeeee;
     border: 1px solid #ddd;
-}
-
-.section-header{
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-}
-
-.section-body{
     padding: 15px;
 }
+
+#content{
+    background-color:#ffffff;
+    margin-top: 0px;
+    padding: 2em;
+}
+
+#references-container{
+    display : flex;
+    display: -webkit-flex;
+}
+#references-container section{
+    width:50%;
+}
+
+
 

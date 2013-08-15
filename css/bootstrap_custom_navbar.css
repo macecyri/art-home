@@ -1,0 +1,28 @@
+/* Main navbar Background color */
+.navbar,.navbar-inner{
+    background: #000000 !important;   /* Main background */
+    border-radius:0px;
+}
+
+.navbar-inner{         /* We don't want border */
+    border:none !important;
+}
+
+
+/* Hover and focuscolor*/
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover,
+.navbar .nav > li > a:hover,
+.navbar .nav .active > a:focus {
+    background: #006dcc !important;
+}
+
+/* text color*/
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover,
+.navbar .nav .active > a:focus,
+.navbar .nav > li > a{
+    color:#fff !important;
+    text-shadow:none;
+}
+
