@@ -59,5 +59,18 @@ section{
     width:50%;
 }
 
+#references-container>div{
+    width:50%;
+}
+
+#artiste_examples{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#artiste_examples iframe{
+    margin-bottom: 10px;
+}
+
 
 
