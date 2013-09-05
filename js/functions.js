@@ -1,6 +1,7 @@
-﻿function openDialogArtistCrieria() {
+﻿function openModal(modaltodisplay) {
+    var modalurl = 'modal/' + modaltodisplay  + '.html';
     $.ajax({
-        url: "frames/artist_criteria.html",
+        url: modalurl,
         success: function (data) {
             $("#modal_info").html(data);
             updateModalContent();
@@ -15,3 +16,4 @@ function updateModalContent() {
         $("#modal_info").modal('hide');
     });
 }
+

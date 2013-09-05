@@ -29,9 +29,7 @@
 </header>
 
 <div class="body" id="content">
-    <section>
-        XX Label est un label qui a pour but
-    </section>
+    <section data-htmltoload='main_presentation'></section>
 
     <section>
         <div class="tabbable">
@@ -41,14 +39,9 @@
                 <li><a href="#public" data-toggle="pill">Je suis un spectateur</a></li>
             </ul>
             <div class="tab-content">
-                <div class="tab-pane active" id="artist">
-                    On aide les artistes qui satisfassent aux conitions suivantesdbkdhbkdh
-
-                    <button id="criteriaInfo" type="button" class="btn btn-primary">Quelles conditions dois-je remplir
-                    </button>
-                </div>
-                <div class="tab-pane" id="host">MESSAGES ... Aliquip placeat salvia cillum iphone.</div>
-                <div class="tab-pane" id="public">Mon nom est <span id="username"></span></div>
+                <div data-htmltoload='main_artist_presentation' class="tab-pane active" id="artist"></div>
+                <div data-htmltoload='main_host_presentation' class="tab-pane" id="host"></div>
+                <div data-htmltoload='main_public_presentation' class="tab-pane" id="public"></div>
             </div>
         </div>
     </section>
