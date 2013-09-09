@@ -10,7 +10,7 @@ $(document).ready(function() {
     $('[data-htmltoload]').each(function() {
         var urltoload = 'frames/' + $(this).data('htmltoload') + '.html';
         $(this).load(urltoload, function() {
-            /***************************** Binding 'click' event on buttons (open dialog_box) **********************************/
+            /***************************** Binding 'click' event on buttons button (open dialog_box) **********************************/
             $('button[data-targetmodal]').on("click", function() {
                 openModal($(this).data('targetmodal'));
             });
