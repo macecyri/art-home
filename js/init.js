@@ -3,6 +3,12 @@
 /**
  * Script that is executed when the page is loaded
  */
+
+function MyCtrl($scope) {
+    $scope.greeting = 'Hola!';
+    $scope.templateurl='frames/main_presentation.html';
+}
+
 $(document).ready(function() {
     $('#myTab a:first').tab('show');
 

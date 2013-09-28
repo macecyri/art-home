@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html ng-app>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
 
     <script src="plugins/jquery-1.10.2.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-resource.min.js"></script>
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/art-home.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap_custom_navbar.css"/>
@@ -19,18 +21,20 @@
 <body>
 <header class="navbar ">
     <div class="navbar-inner body">
-        <a id="brand" href="#">XX Label</a>
+        <a id="brand" href="#">Coop Label</a>
         <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="google.com">Link</a></li>
-            <li><a href="#">Link</a></li>
+            <li class="active"><a href="#">Accueil</a></li>
+            <li><a href="google.com">Artistes</a></li>
+            <li><a href="#">Lieux de representation</a></li>
+            <li><a href="#">Evenements</a></li>
         </ul>
     </div>
 </header>
 </header>
 
-<div class="body" id="content">
-    <section data-htmltoload='main_presentation'></section>
+<div ng-controller="MyCtrl" class="body" id="content">
+    {{ greeting }}
+    <section><ng-include  src="templateurl"></ng-include></section>
 
     <section>
         <div class="tabbable">
@@ -76,7 +80,6 @@
      aria-hidden="true">
 
 </div>
-
 <script type="text/javascript" src="js/functions.js"></script>
 <script type="text/javascript" src="js/init.js"></script>
 </body>
